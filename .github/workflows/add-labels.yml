@@ -15,6 +15,6 @@ jobs:
           node-version: "14.x"
       - id: run-main
         name: Run main.js
-        env:
-          GITHUB_EVENT: ${{ github.event }}
+        # env:
+        #   GITHUB_EVENT: ${{ github.event }}
         run: node ./main.js
