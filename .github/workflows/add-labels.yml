@@ -1,8 +1,9 @@
 name: Run node files
 
 on:
-  issues:
-    types: [opened, edited]
+  push # trigger on any push to any branch
+  # issues:
+  #   types: [opened, edited] # trigger on issue opened/edited
 
 jobs:
   run-main:
