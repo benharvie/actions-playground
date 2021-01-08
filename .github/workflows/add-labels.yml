@@ -13,6 +13,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "14.x"
+      - id: dependency-install
+        name: Install npm dependencies
+        run: npm ci
       - id: run-main
         name: Run main.js
         # env:
