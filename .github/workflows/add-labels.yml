@@ -30,5 +30,5 @@ jobs:
       - id: run-main
         name: Run main.js
         env:
-          GITHUB_EVENT: ${{ github.event }}
+          EVENT_OUTPUT: ${{ github.event }}
         run: node ./main.js
