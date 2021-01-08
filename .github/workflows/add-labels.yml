@@ -9,6 +9,10 @@ jobs:
     name: Run main.js
     runs-on: ubuntu-latest
     steps:
+      - id: node-setup
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.x"
       - id: run-main
         name: Run main.js
         env:
