@@ -1,0 +1,16 @@
+name: Run node files
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  run-main:
+    name: Run main.js
+    runs-on: ubuntu-latest
+    steps:
+      - id: run-main
+        name: Run main.js
+        env:
+          GITHUB_EVENT: ${{ github }}
+        run: node ./main.js
